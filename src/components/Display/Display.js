@@ -1,16 +1,23 @@
 import React from 'react';
 import './Display.css'
 
-const Display = (props) => {
-    console.log(props)
-    const {strMeal,idMeal,strMealThumb,strArea,strInstructions}=props.meal
+const Display = ({meal, handleClick}) => {
+    // console.log(props);
+//    const{meal, handleClick} = props;
+    const {strMeal,strMealThumb,strArea,strInstructions} = meal;
     return (
-        <div className='meal'>
+       
+            <div className='meal'>
             <img src={strMealThumb} alt="" />
-            <h4>Name : {strMeal}</h4>
-            
-
-        </div>
+            <div className='details'>
+            <h4>Name: {strMeal}</h4>
+            <p>Category: {strArea} </p>
+            <p>Details: {strInstructions.length > 95 ? strInstructions.slice( 0, 95) + '...' : strInstructions}</p>
+            </div>
+          
+            <button className='btn-cart' onClick={ () => handleClick(meal)}><p>Add to Cart</p></button>
+     
+            </div>
     );
 };
 

@@ -1,9 +1,17 @@
 .container{
     display:grid;
     grid-template-columns: 4fr 1fr;
+    
 }
 .meal-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap:50px;
+    margin-top: 50px;
+    padding: 20px;
+    
+}
+.cart-container{
+    background-color: blanchedalmond;
+    padding-left: 40px;
 }
