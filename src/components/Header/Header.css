@@ -1,0 +1,18 @@
+.header{
+    background-color: black;
+    height: 60px;
+    padding-left: 180px ;
+    padding-right: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header a{
+    text-decoration: none;
+    margin: 20px;
+    color: white;
+    font-size: 18px;
+}
+.header a:hover{
+    color: orangered;
+}

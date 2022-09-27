@@ -1,0 +1,9 @@
+.meal{
+    width: 300px;
+    height: 500px;
+    border: 2px solid black;
+}
+.meal img{
+    width: 300px;
+    height: 300px;
+}
