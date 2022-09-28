@@ -16,8 +16,22 @@ useEffect(()=>{
 },[])
 const handleClick =(meal)=>{
     // console.log(meal);
-    const newCart=[...cart,meal];
-    setCart(newCart);
+    const isExist=cart.find(item=> item.idMeal===meal.idMeal)
+    
+    if(cart.length>=5){
+        alert('can not add more than 5');
+        return;
+      }
+      else if(!isExist){
+
+        const newCart=[...cart,meal];
+        setCart(newCart);
+      }
+else{
+    alert('already exist');
+}
+      
+
 }
 
     return (

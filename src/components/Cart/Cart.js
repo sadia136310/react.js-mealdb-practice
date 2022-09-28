@@ -9,10 +9,6 @@ const Cart = ({cart}) => {
 
 const names=cart.map(item=><li>{item.strMeal}</li>)
 
-// if(cart.length>5){
-//     alert('can not add more than 5');
-//   }
- 
     return (
        
         <div className='cart'>
