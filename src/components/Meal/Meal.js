@@ -16,8 +16,6 @@ useEffect(()=>{
 },[])
 const handleClick =(meal)=>{
     // console.log(meal);
-
-    
     const newCart=[...cart,meal];
     setCart(newCart);
 }

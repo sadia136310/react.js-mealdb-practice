@@ -5,6 +5,7 @@ const Display = ({meal, handleClick}) => {
     // console.log(props);
 //    const{meal, handleClick} = props;
     const {strMeal,strMealThumb,strArea,strInstructions} = meal;
+
     return (
        
             <div className='meal'>
